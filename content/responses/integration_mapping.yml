@@ -23,8 +23,7 @@ allOf:
         nullable: false
 
       partner_item:
-        oneOf:
-          - $ref: '#/components/schemas/IntegrationMappingPartnerItemSlack'
+        $ref: '#/components/schemas/IntegrationMappingPartnerItemSlack'
         nullable: false
         description: |-
           Mapped item object for Slack
@@ -52,8 +51,7 @@ allOf:
         example: {}
         description: |-
           Integration mapping options for Slack
-        anyOf:
-          - $ref: '#/components/schemas/IntegrationMappingSlackOptions'
+        $ref: '#/components/schemas/IntegrationMappingSlackOptions'
 
       created_by:
         description: |-
